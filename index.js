@@ -61,8 +61,6 @@ const mainFunction = async () => {
     await getWalletBalance();
     await airDropSol();
     await getWalletBalance();
-    await airDropSol();
-    await getWalletBalance();
 }
 
 mainFunction();
