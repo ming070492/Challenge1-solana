@@ -11,6 +11,7 @@ const {
 const newPair = new Keypair();
 
 // Exact the public and private key from the keypair
+
 const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
 const privateKey = newPair._keypair.secretKey;
 
@@ -57,6 +58,8 @@ const airDropSol = async () => {
 
 // Show the wallet balance before and after airdropping SOL
 const mainFunction = async () => {
+    await getWalletBalance();
+    await airDropSol();
     await getWalletBalance();
     await airDropSol();
     await getWalletBalance();
